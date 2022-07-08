@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="box"></div>
+    <form data-multi-step class="multi-step-form" action="data.html" method="get" enctype="multipart/form-data">
+        <div class="card" data-step>
+            <h3 class="title">This is step 1</h3>
+           <div class="form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+           </div>
+           <div class="form">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+           </div>
+           <button type="button" data-next>Next</button>
+        </div>
+        <div class="card" data-step>
+            <h3 class="title">This is step 2</h3>
+            <div class="form">
+            <label for="adress">Adress</label>
+            <input type="text" name="adress" id="adress">
+            </div>
+            <div class="form">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" required>
+            </div>
+            <div class="form">
+            <label for="Zip">Post code</label>
+            <input type="tel" name="Zip" id="Zip" minlength="4" required>
+            </div>
+            <button type="button" data-previous>Previous</button>
+            <button type="button" data-next>Next</button>
+        </div>
+        <div class="card" data-step>
+            <h3 class="title">This is step 3</h3>
+               <div class="form">
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" required>
+               </div>
+               <div class="form">
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname" required>
+               </div>
+               <button type="button" data-previous>Previous</button>
+            <button type="submit">submit</button>
+        </div>
+
+    </form>
+</body>
+</html>
